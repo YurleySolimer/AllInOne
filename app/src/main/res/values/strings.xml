@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">AllInOne</string>
+    <string name="app_name">ProyectoAllInOne</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_inicio_sesion">InicioSesion</string>
 </resources>
