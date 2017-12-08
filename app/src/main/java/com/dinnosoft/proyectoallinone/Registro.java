@@ -1,6 +1,7 @@
 package com.dinnosoft.proyectoallinone;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -97,6 +98,8 @@ public class Registro extends AppCompatActivity {
 
             // Printing toast message after done inserting.
             Toast.makeText(Registro.this,"User Registered Successfully", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(Registro.this, Inicio.class);
+            startActivity(intent);
 
         }
         // This block will execute if any of the registration EditText is empty.

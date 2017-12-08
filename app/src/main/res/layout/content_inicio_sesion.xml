@@ -8,60 +8,58 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.dinnosoft.proyectoallinone.Inicio">
+    android:background="@drawable/allinonefondo2"
+    tools:context="com.dinnosoft.proyectoallinone.InicioSesion">
 
-    <TextView
-        android:text="Inicio de Sesión"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonLogin"
+        android:text="Confirmar"
+        android:background="@drawable/botones"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/buttonRegister"
+        android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Ingresa tu Email"
-        android:textColor="#000"
-        android:ems="10"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/editEmail"
-        android:gravity="center"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonRegister"
+        android:text="¿No tienes cuenta?, Regístrate aquí"
+        android:background="@drawable/botones"
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonLogin" />
 
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
         android:inputType="textPassword"
         android:hint="Ingresa tu Contraseña"
         android:textColor="#000"
         android:ems="10"
-        android:layout_below="@+id/editEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:id="@+id/editPassword"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/botones3"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonLogin"
-        android:layout_below="@+id/editPassword"
-        android:layout_marginTop="20dp"
-        android:text="Confirmar"/>
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonRegister"
-        android:layout_below="@+id/buttonLogin"
-        android:layout_marginTop="20dp"
-        android:text="¿No tienes cuenta?, Regístrate aquí"/>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Ingresa tu Email"
+        android:ems="10"
+        android:id="@+id/editEmail"
+        android:gravity="center"
+        android:layout_marginBottom="23dp"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:background="@drawable/botones3"
+        android:selectAllOnFocus="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_above="@+id/editPassword"
+        android:layout_alignStart="@+id/editPassword" />
 
 </RelativeLayout>
 

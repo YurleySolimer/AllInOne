@@ -25,7 +25,7 @@ public class InicioSesion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_inicio_sesion);
 
         LogInButton = (Button)findViewById(R.id.buttonLogin);
 
@@ -131,7 +131,9 @@ public class InicioSesion extends AppCompatActivity {
             Toast.makeText(InicioSesion.this,"Inicio de Sesión Exitoso",Toast.LENGTH_LONG).show();
 
             // Going to Dashboard activity after login success message.
+
             Intent intent = new Intent(InicioSesion.this, Inicio.class);
+            startActivity(intent);
 
             // Sending Email to Dashboard Activity using intent.
             intent.putExtra(UserEmail, EmailHolder);
