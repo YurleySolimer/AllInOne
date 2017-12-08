@@ -23,8 +23,24 @@ public class Inicio extends AppCompatActivity {
                 Intent intent = new Intent(Inicio.this, Perfil.class);
                 startActivity(intent);
 
+
+            }
+        });
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent2 = new Intent(Inicio.this, Rutinas.class);
                 startActivity(intent2);
+
+
+
+            }
+        });
+
+        boton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
                 Intent intent3 = new Intent(Inicio.this, Consejos.class);
                 startActivity(intent3);

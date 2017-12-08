@@ -1,6 +1,7 @@
 package com.dinnosoft.proyectoallinone;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +11,7 @@ public class Rutina1 extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rutinas);
+        setContentView(R.layout.rutina1);
 
         pressdebanca();
 
@@ -66,6 +67,7 @@ public class Rutina1 extends AppCompatActivity {
                 cancelar();
             }
         });
+        press_sentado.create().show();
     }
 
 
@@ -92,7 +94,7 @@ public class Rutina1 extends AppCompatActivity {
         jalones_polea.setCancelable(false);
         jalones_polea.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface jalones_polea, int id) {
-                jalonespolea();
+                jalonespolea1();
             }
         });
         jalones_polea.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -100,11 +102,47 @@ public class Rutina1 extends AppCompatActivity {
                 cancelar();
             }
         });
+        jalones_polea.create().show();
+    }
+
+
+    public void jalonespolea1() {
+        ImageView image3 = new ImageView(this);
+        image3.setImageResource(R.drawable.jalonesenpolea);
+
+        AlertDialog.Builder jalones_polea1 = new AlertDialog.Builder(this);
+        jalones_polea1.setMessage("Jalones en Polea");
+        jalones_polea1.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface jalones_polea1, int id) {
+                fin();
+            }
+        }).
+                setView(image3);
+        jalones_polea1.create().show();
+
+    }
+
+    public void fin() {
+        AlertDialog.Builder fin = new AlertDialog.Builder(this);
+        fin.setMessage("Ha completado su rutina");
+        fin.setCancelable(false);
+        fin.setPositiveButton("Volver a Menu", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface fin, int id) {
+                Intent intent = new Intent(Rutina1.this, Rutinas.class);
+                startActivity(intent);
+            }
+        });
+        fin.create().show();
+
     }
 
 
     public void cancelar() {
-        //ir a clase Rutinas
+
+                Intent intent = new Intent(Rutina1.this, Rutinas.class);
+                startActivity(intent);
+
+
     }
 }
 

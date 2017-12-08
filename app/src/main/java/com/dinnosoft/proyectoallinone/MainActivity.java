@@ -23,8 +23,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, InicioSesion.class);
                 startActivity(intent);
 
+
+            }
+        });
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this, Registro.class);
                 startActivity(intent2);
+
             }
         });
 

@@ -31,7 +31,8 @@
         <activity android:name=".Rutinas" />
         <activity android:name=".Consejos" />
         <activity android:name=".ModificarDatos" />
-        <activity android:name=".Rutina1"></activity>
+        <activity android:name=".Rutina1" />
+        <activity android:name=".Rutinas3"></activity>
     </application>
 
 </manifest>

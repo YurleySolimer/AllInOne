@@ -23,7 +23,15 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Perfil.this, MainActivity.class);
-                startActivity(intent);
+
+
+            }
+        });
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
 
                 Intent intent2 = new Intent(Perfil.this, ModificarDatos.class);
                 startActivity(intent2);
