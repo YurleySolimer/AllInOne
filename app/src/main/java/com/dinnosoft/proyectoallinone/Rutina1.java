@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 public class Rutina1 extends AppCompatActivity {
 
@@ -11,21 +12,19 @@ public class Rutina1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rutinas);
 
+        pressdebanca();
+
+
+    }
+
+    public  void pressdebanca(){
         AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
-        dialogo1.setTitle("RUTINA PECHO");
-        dialogo1.setMessage("Rutinas de gimnasio para pecho:\n" +
-                "\n" +
-                "Press de banca.\n" +
-                "\n" +
-                "Press en banca inclinada.\n" +
-                "\n" +
-                "Press en banca declinada.\n" +
-                "\n" +
-                "Pectoral contractor ó Aperturas planas.");
+        dialogo1.setTitle("PressDeBanca");
+        dialogo1.setMessage("");
         dialogo1.setCancelable(false);
         dialogo1.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-                aceptar();
+                pressdebancaimage();
             }
         });
         dialogo1.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -34,50 +33,75 @@ public class Rutina1 extends AppCompatActivity {
             }
         });
         dialogo1.show();
-
-
     }
 
-    public void aceptar() {
-        /*ImageView image = new ImageView(this);
-        image.setImageResource(R.drawable.PressDeBanca);
+    public void pressdebancaimage() {
+        ImageView image = new ImageView(this);
+        image.setImageResource(R.drawable.pressdebanca);
 
-        AlertDialog.Builder builder =
-                new AlertDialog.Builder(this).
-                        setMessage("Message above the image").
-                        setPositiveButton("OK", new View.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
+        AlertDialog.Builder pressdebanca1 = new AlertDialog.Builder(this);
+                       pressdebanca1.setMessage("Press De Banca");
+                        pressdebanca1.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface pressdebanca, int id) {
+                                press_sentado();
                             }
                         }).
                         setView(image);
-        builder.create().show();*/
+        pressdebanca1.create().show();
 
     }
 
-    public void aceptar2() {
-        AlertDialog.Builder dialogo2 = new AlertDialog.Builder(this);
-        dialogo2.setTitle("RUTINA Hombros");
-        dialogo2.setMessage("Press sentado posterior.\n" +
-                "\n" +
-                "Press sentado anterior.\n" +
-                "\n" +
-                "Elevación frontal de pie ó Elevación frontal con inclinación.\n" +
-                "\n" +
-                "Ascenso lateral.");
-        dialogo2.setCancelable(false);
-        dialogo2.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogo2, int id) {
-                aceptar2();
+    public void press_sentado() {
+        AlertDialog.Builder press_sentado = new AlertDialog.Builder(this);
+        press_sentado.setTitle("RUTINA Hombros");
+        press_sentado.setMessage("Press sentado posterior");
+        press_sentado.setCancelable(false);
+        press_sentado.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface press_sentado, int id) {
+                press_sentadoimage();
             }
         });
-        dialogo2.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogo2, int id) {
+        press_sentado.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface press_sentado, int id) {
                 cancelar();
             }
         });
     }
+
+
+    public void press_sentadoimage() {
+        ImageView image2 = new ImageView(this);
+        image2.setImageResource(R.drawable.press_sentado);
+
+        AlertDialog.Builder press_sentado1 = new AlertDialog.Builder(this);
+        press_sentado1.setMessage("Press De Banca");
+        press_sentado1.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface press_sentado1, int id) {
+                jalonespolea();
+            }
+        }).
+                setView(image2);
+        press_sentado1.create().show();
+
+    }
+
+    public void jalonespolea() {
+        AlertDialog.Builder jalones_polea = new AlertDialog.Builder(this);
+        jalones_polea.setTitle("Jalones en Polea");
+        jalones_polea.setMessage("");
+        jalones_polea.setCancelable(false);
+        jalones_polea.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface jalones_polea, int id) {
+                jalonespolea();
+            }
+        });
+        jalones_polea.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface jalones_polea, int id) {
+                cancelar();
+            }
+        });
+    }
+
 
     public void cancelar() {
         //ir a clase Rutinas
