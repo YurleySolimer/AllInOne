@@ -16,14 +16,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/Modificar" />
+        android:id="@+id/Perfil" />
 
     <Button
         android:text="Consejos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/UltimasRutinas"
-        android:layout_alignEnd="@+id/UltimasRutinas"
+        android:layout_below="@+id/Rutinas"
+        android:layout_alignEnd="@+id/Rutinas"
         android:layout_marginTop="51dp"
         android:id="@+id/Consejos" />
 
@@ -31,9 +31,9 @@
         android:text="Rutinas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/UltimasRutinas"
-        android:layout_below="@+id/RutinasFavoritas"
-        android:layout_alignStart="@+id/RutinasFavoritas"
+        android:id="@+id/Rutinas"
+        android:layout_below="@+id/Mapas"
+        android:layout_alignStart="@+id/Mapas"
         android:layout_marginTop="55dp" />
 
     <Button
@@ -42,16 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="41dp"
-        android:id="@+id/RutinasFavoritas"
-        android:layout_below="@+id/Modificar"
+        android:id="@+id/Mapas"
+        android:layout_below="@+id/Perfil"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Indice de Masa Muscular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/Consejos"
-        android:layout_marginBottom="41dp"
-        android:id="@+id/IMM" />
 </RelativeLayout>

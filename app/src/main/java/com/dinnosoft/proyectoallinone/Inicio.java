@@ -13,9 +13,10 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inicio);
 
-        final Button boton = (Button) findViewById(R.id.Modificar);
-        final Button boton2 = (Button) findViewById(R.id.UltimasRutinas);
+        final Button boton = (Button) findViewById(R.id.Perfil);
+        final Button boton2 = (Button) findViewById(R.id.Rutinas);
         final Button boton3 = (Button) findViewById(R.id.Consejos);
+        final Button boton4 = (Button) findViewById(R.id.Mapas);
 
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +45,16 @@ public class Inicio extends AppCompatActivity {
 
                 Intent intent3 = new Intent(Inicio.this, Consejos.class);
                 startActivity(intent3);
+
+            }
+        });
+
+        boton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent4 = new Intent(Inicio.this, MapsActivity.class);
+                startActivity(intent4);
 
             }
         });

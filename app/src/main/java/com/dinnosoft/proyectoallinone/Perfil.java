@@ -14,7 +14,7 @@ public class Perfil extends AppCompatActivity {
         setContentView(R.layout.perfil);
 
         final Button boton = (Button) findViewById(R.id.CerraarSesion);
-        final Button boton2 = (Button) findViewById(R.id.Modificar);
+        final Button boton2 = (Button) findViewById(R.id.Perfil);
 
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
