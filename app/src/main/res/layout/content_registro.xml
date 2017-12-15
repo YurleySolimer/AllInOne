@@ -8,22 +8,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.dinnosoft.proyectoallinone.Registro">
+    android:background="@drawable/allinonefondo3"
+        tools:context="com.dinnosoft.proyectoallinone.Registro">
 
     <TextView
         android:text="Registro de Usuario"
         android:gravity="center"
         android:textSize="20dp"
         android:textColor="#000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/botones"
         android:id="@+id/textView" />
 
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:inputType="textEmailAddress"
         android:hint="Ingresa tu Nombre"
         android:textColor="#000"
@@ -31,25 +33,27 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:background="@drawable/botones3"
         android:id="@+id/editName"
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:inputType="textEmailAddress"
-        android:hint="Ingresa tu Edad"
+        android:hint="Ingresa tu Email"
         android:textColor="#000"
         android:ems="10"
         android:layout_below="@+id/editName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:id="@+id/editEmail"
+        android:background="@drawable/botones3"
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:inputType="textPassword"
         android:hint="Ingresa tu Contraseña"
         android:textColor="#000"
@@ -58,33 +62,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:id="@+id/editPassword"
+        android:background="@drawable/botones3"
         android:gravity="center"/>
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonRegister"
-        android:text="Confirmar"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp" />
-
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Ingresa tu Edad"
-        android:textColor="#000"
-        android:ems="10"
-        android:id="@+id/editEdad"
-        android:gravity="center"
-        android:layout_below="@+id/editPassword"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="27dp" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:inputType="textEmailAddress"
         android:hint="Ingresa tu Peso"
         android:textColor="#000"
@@ -93,19 +76,45 @@
         android:id="@+id/editPeso"
         android:gravity="center"
         android:layout_below="@+id/editEdad"
+        android:background="@drawable/botones3"
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Ingresa tu Edad"
+        android:textColor="#000"
+        android:ems="10"
+        android:id="@+id/editEdad"
+        android:gravity="center"
+        android:background="@drawable/botones3"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/editPassword"
+        android:layout_alignStart="@+id/editPeso" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:inputType="textEmailAddress"
         android:hint="Ingresa tu Altura"
         android:textColor="#000"
         android:ems="10"
-        android:layout_marginTop="11dp"
         android:id="@+id/editAltura"
         android:gravity="center"
+        android:background="@drawable/botones3"
         android:layout_below="@+id/editPeso"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/editPeso"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/buttonRegister"
+        android:text="Confirmar"
+        android:background="@drawable/botones"
+        android:layout_below="@+id/editAltura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
 
 </RelativeLayout>

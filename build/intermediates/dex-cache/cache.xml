@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b4157b1f4d5ae7270275ac0ef62e1b87f68d3488">
+        sha1="1e694d99d7453ea525cda2f0025d6a3775a4e859">
         <dex dex="/home/yurley/DINNOSOFT/ProyectoAllInOne/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fd11c4d14ffb28c70ff252ce2e4b33590f800c24/classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b4447a8ae19d176e3b26ce43e0e30ef05af26459">
+        sha1="288b543ec000855329b3e87752db6fdb57ad2d7d">
         <dex dex="/home/yurley/DINNOSOFT/ProyectoAllInOne/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_19a783d1f186425b101693fef1a191bbee456d47/classes.dex" />
     </item>
     <item
@@ -108,6 +108,15 @@
         revision="25.0.2"
         sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
         <dex dex="/home/yurley/DINNOSOFT/ProyectoAllInOne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_ff11c9301531d4a0c7ec8eb55346259edda97967/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/yurley/DINNOSOFT/ProyectoAllInOne/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="/home/yurley/DINNOSOFT/ProyectoAllInOne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.0_875822b21fc983c3335d40fb06893c7009a31f8b/classes.dex" />
     </item>
     <item
         is-multidex="true"

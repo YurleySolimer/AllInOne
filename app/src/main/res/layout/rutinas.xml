@@ -8,32 +8,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/allinonefondo3"
     tools:context="com.dinnosoft.proyectoallinone.Rutinas">
 
     <Button
         android:text="Rutina1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:background="@drawable/botones"
+        android:id="@+id/Rutina1"
+        android:layout_above="@+id/Rutina2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:id="@+id/Rutina1" />
+        android:layout_marginTop="33dp"
+        android:background="@drawable/botones3"
+        android:id="@+id/SelRutina"
+        android:textAppearance="@android:style/TextAppearance.Holo.SearchResult.Title"
+        tools:text="Seleccione una rutina" />
 
     <Button
         android:text="Rutina2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Rutina1"
-        android:layout_alignStart="@+id/Rutina1"
-        android:layout_marginTop="58dp"
-        android:id="@+id/Rutina2" />
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:background="@drawable/botones"
+        android:id="@+id/Rutina2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/Rutina1" />
 
     <Button
         android:text="Rutina3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/Rutina2"
-        android:layout_marginBottom="76dp"
-        android:id="@+id/Rutina3" />
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:background="@drawable/botones"
+        android:id="@+id/Rutina3"
+        android:layout_marginTop="58dp"
+        android:layout_alignTop="@+id/Rutina2"
+        android:layout_alignStart="@+id/Rutina2" />
 </RelativeLayout>

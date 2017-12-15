@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/allinonefondo3"
     android:layout_height="match_parent">
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,16 +16,18 @@
         tools:context="com.dinnosoft.proyectoallinone.MapsActivity"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:background="@drawable/allinonefondo3"
         android:layout_below="@+id/B_gimnasio"
         />
 
     <Button
         android:id="@+id/B_gimnasio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/TF_location"
         android:onClick="onClick"
+        android:background="@drawable/botones"
         android:text="GIMNASIOS"
         tools:ignore="UnknownId" />
 
